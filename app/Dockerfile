@@ -24,4 +24,4 @@ COPY . /code/
 ENV DJANGO_SETTINGS_MODULE=app.settings
 EXPOSE 8000
 
-CMD ["gunicorn", "app.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "app.wsgi:application", "--bind", "127.0.0.1:8000"]
