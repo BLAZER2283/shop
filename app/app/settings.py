@@ -28,7 +28,7 @@ if dotenv_path.exists():
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-5^emf^j70i@x%mb!d1bifkrnk2w0x7i2+nuc=cwq+keeu3y9rh')
+SECRET_KEY = 'django-insecure-5^emf^j70i@x%mb!d1bifkrnk2w0x7i2+nuc=cwq+keeu3y9rh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'True').lower() in ('1', 'true', 'yes')
@@ -126,8 +126,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 # Stripe configuration - read from environment variables
-STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
-STRIPE_PUBLISHABLE_KEY = os.environ.get('STRIPE_PUBLISHABLE_KEY', '')
+STRIPE_SECRET_KEY = 'sk_test_51SlKMyPDFUjviG24QspjobN3RTY6FlJCTCtQ12sdgIuqUv8p9m2J9Rcm1G0GR7snPNom2PJ38o72sDR0Q5VRlPse00e5ZsYDNu'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51SlKMyPDFUjviG24b6hk4UFaTLfi6YvgKltRLEthR2on9ZTPUIEoN9JCHADEaTVk44QRvMaSeKxKjB8j9DeQFwlF00wdR0yu5e'
 STRIPE_DEFAULT_CURRENCY = os.environ.get('STRIPE_DEFAULT_CURRENCY', 'usd')
 
 # Supported Stripe currencies (kept as a set for quick validation)
